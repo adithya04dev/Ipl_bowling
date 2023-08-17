@@ -51,7 +51,7 @@ class Bowler():
                     for ph in phase:
 
                         overs1+=self.dic[ph]
-                        self.comb_df=self.create_df(name,overs1,bat,Season)
+                    self.comb_df=self.create_df(name,overs1,bat,Season)
 
 
                     for ph in phase:
