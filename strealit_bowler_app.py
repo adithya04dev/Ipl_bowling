@@ -49,8 +49,13 @@ def main():
         #st.write("Selected Seasons:", selected_years[0], "to", selected_years[1])
         result1=bow.calculateb(player_name,overs,batting_type,Season)
         result2=bow.overall()
+        result3=bow.combined()
         st.write("Overall (All phases and batting types ):")
         st.dataframe(result2)
+        
+        st.write("Combined (Input phases and bowling types ):")
+        st.dataframe(result3)
+        
         
         
         st.write("Phase wise breakdown:")

@@ -46,12 +46,18 @@ class Bowler():
                     self.ovsdf["Phase"]="Overall-LHB"
                     self.ovpdf["Phase"]="Overall-RHB"
                     self.ovdf=pd.concat([self.ovdf,self.ovpdf,self.ovsdf],ignore_index=True)
+                    
+                    overs1=[]
+                    for ph in phase:
 
+                        overs1+=self.dic[ph]
+                        self.comb_df=self.create_df(name,overs1,bat,Season)
 
 
                     for ph in phase:
 
                         overs1=self.dic[ph]
+                        
 
 
                         for ba in bat:
@@ -67,6 +73,8 @@ class Bowler():
 
             def overall(self):
                 return self.ovdf
+            def combined(self):
+                return self.comb_df   
 
 
 #result=bow.calculateb('TA Boult',[1,2,3],["RHB"],[2023]) 
