@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 
-with open('bowling.pkl', 'rb') as f:
+with open('bowling2.pkl', 'rb') as f:
     bow = pickle.load(f)
 
 

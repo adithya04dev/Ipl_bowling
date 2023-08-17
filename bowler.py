@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-df=pd.read_csv("processed_ballbyball.csv")
+#df=pd.read_csv("C:/Users/adith/Documents/ipl_app/streamlit_app/bowling_n/processed_ballbyball.csv")
 class Bowler():
 
             def __init__(self,deliveries_df):
@@ -80,7 +80,7 @@ class Bowler():
 #result=bow.calculateb('TA Boult',[1,2,3],["RHB"],[2023]) 
 
 
-bow=Bowler(df)
-with open('bowling.pkl', 'wb') as f:
-        pickle.dump(bow, f)
+#bow=Bowler(df)
+#with open('bowling2.pkl', 'wb') as f:
+ #       pickle.dump(bow, f)
 
